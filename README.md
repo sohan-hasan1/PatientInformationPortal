@@ -18,7 +18,7 @@ note: if occur any error please check connection string form appsettings.json
 ##STEP - 4
 Run as <Multiple Startup Projects>
 
-##After Run you will redrict to patient list.
+##After Run you will redirect to patient list.
 ## To add a new patient, users can click on the "Add Patient" 
 ```
 >***Basic Features***
