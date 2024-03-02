@@ -1,0 +1,110 @@
+﻿@model PatientInformationPortalWeb.Models.ViewModels.PatientInfoViewModel
+
+@{
+    ViewData["Title"] = "Add Patient";
+}
+
+<div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; padding: 10px;">
+    <div class="row createMargin">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-10">
+            <h2>Add Patient</h2>
+        </div>
+    </div>
+    <form method="post" action="/PatientInfo/AddPatient">
+
+        <div class="row createMargin">
+            <div class="col-md-2">
+                <div style="float:right">
+                    <label for="" class="form-label">Patient Name</label> <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <input asp-for="Name" class="form-control elementPosition" />  <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row createMargin">
+            <div class="col-md-2">
+                <div style="float:right">
+                    <label for="" class="form-label">Disease Name</label> <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <select asp-for="SelectedDiseaseInformation" asp-items="Model.DiseaseInformationSelectList" class="form-control elementPosition">
+                </select>
+            </div>
+        </div>
+
+        <div class="row createMargin">
+            <div class="col-md-2">
+                <div style="float:right">
+                    <label for="" class="form-label">Epilepsy</label> <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <select asp-for="SelectedEpilepsyStatus" asp-items="Model.EpilepsyStatusSelectList" class="form-control elementPosition">
+                </select>
+            </div>
+        </div>
+
+        <div class="row createMargin">
+            <div class="col-md-2">
+                <div style="float:right">
+                    <label for="" class="form-label">Other NCDs</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <select id="leftNCDs" asp-for="SelectedLeftNCDs" asp-items="Model.LeftNCDSelectList" class="form-control selectListPosition" multiple>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <div>
+                    <button id="addNCDButton" class="btn btn-secondary btnWidth" style="margin-bottom: 10px;"> Add ></button>
+                </div>
+                <div>
+                    <button id="removeNCDButton" class="btn btn-danger btnWidth"> < Remove</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <select id="rightNCDs" asp-for="SelectedRightNCDs" asp-items="Model.RightNCDSelectList" class="form-control selectListPosition" multiple>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="row createMargin">
+            <div class="col-md-2">
+                <div style="float:right">
+                    <label for="" class="form-label">Allergies</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <select id="leftAllergies" asp-for="SelectedLeftAllergies" asp-items="Model.LeftAllergiesSelectList" class="form-control selectListPosition" multiple>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <div>
+                    <button id="addAlButton" class="btn btn-secondary btnWidth" style="margin-bottom: 10px;"> Add ></button>
+                </div>
+                <div>
+                    <button id="removeAlButton" class="btn btn-danger btnWidth"> < Remove</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <select id="rightAllergies" asp-for="SelectedRightAllergies" asp-items="Model.RightAllergiesSelectList" class="form-control selectListPosition" multiple>
+                </select>
+            </div>
+        </div>
+
+        <div class="row createMargin">
+            <div class="col-md-2 offset-md-6">
+                <button class="btn btn-info btnWidth" type="submit">Save</button>
+            </div>
+        </div>
+
+    </form>
+</div>

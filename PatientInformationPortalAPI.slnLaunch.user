@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "PatientInformationPortalAPI\\PatientInformationPortalAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "PatientInformationPortalWeb\\PatientInformationPortalWeb.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

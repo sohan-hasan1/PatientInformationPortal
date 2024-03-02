@@ -1,0 +1,161 @@
+[
+  {
+    "ContainingType": "PatientInformationPortalAPI.Controllers.AllergiesController",
+    "Method": "GetAllergiesInformation",
+    "RelativePath": "api/Allergies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PatientInformationPortalAPI.Models.ContextModels.Allergies, PatientInformationPortalAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PatientInformationPortalAPI.Controllers.DiseaseInformationController",
+    "Method": "GetDiseaseInformationInformation",
+    "RelativePath": "api/DiseaseInformation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PatientInformationPortalAPI.Models.ContextModels.DiseaseInformation, PatientInformationPortalAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PatientInformationPortalAPI.Controllers.NCDController",
+    "Method": "GetNCDInformation",
+    "RelativePath": "api/NCD",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PatientInformationPortalAPI.Models.ContextModels.NCD, PatientInformationPortalAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PatientInformationPortalAPI.Controllers.PatientInfoController",
+    "Method": "GetPatientInformation",
+    "RelativePath": "api/PatientInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PatientInformationPortalAPI.Models.ContextModels.PatientInformation, PatientInformationPortalAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PatientInformationPortalAPI.Controllers.PatientInfoController",
+    "Method": "PostPatientInformation",
+    "RelativePath": "api/PatientInfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientInformation",
+        "Type": "PatientInformationPortalAPI.Models.ContextModels.PatientInformation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PatientInformationPortalAPI.Models.ContextModels.PatientInformation",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PatientInformationPortalAPI.Controllers.PatientInfoController",
+    "Method": "GetPatientInformation",
+    "RelativePath": "api/PatientInfo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PatientInformationPortalAPI.Controllers.PatientInfoController",
+    "Method": "PutPatientInfo",
+    "RelativePath": "api/PatientInfo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "patientInformation",
+        "Type": "PatientInformationPortalAPI.Models.ContextModels.PatientInformation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PatientInformationPortalAPI.Controllers.PatientInfoController",
+    "Method": "Delete",
+    "RelativePath": "api/PatientInfo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

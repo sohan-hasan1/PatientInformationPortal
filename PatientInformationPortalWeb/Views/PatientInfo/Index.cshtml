@@ -1,0 +1,33 @@
+﻿@model List<PatientInformation>
+
+@{
+    ViewData["Title"] = "Patient List";
+}
+<h2>Patient List </h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Patient Name
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.PatientID</td>
+                <td>@item.Name </td>
+                <td> <a href="PatientInfo/Edit/@item.PatientID">View</a> </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
