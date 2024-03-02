@@ -21,6 +21,7 @@ note: if occur any error please check connection string form appsettings.json
   iii) In the properties window, navigate to the "Common Properties" > "Startup Project" section.
   iv)  Choose "Multiple startup projects."
   v)   For each project, select "Start" or "Start without debugging"  from the dropdown menu under the "Action" column.
+ vi)   Press "Apply" Then "OK"
 
 ##STEP - 5
 Run as <Multiple Startup Projects>
