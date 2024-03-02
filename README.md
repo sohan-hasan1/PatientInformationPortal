@@ -15,7 +15,14 @@ Open Package Manager Console
 Run the command : Update-Database
 note: if occur any error please check connection string form appsettings.json
 
-##STEP - 4
+##STEP 4
+  i)   Right-click on the solution in the Solution Explorer.
+  ii)  Select "Properties" from the context menu.
+  iii) In the properties window, navigate to the "Common Properties" > "Startup Project" section.
+  iv)  Choose "Multiple startup projects."
+  v)   For each project, select "Start" or "Start without debugging"
+
+##STEP - 5
 Run as <Multiple Startup Projects>
 
 ##After Run you will redirect to patient list.
